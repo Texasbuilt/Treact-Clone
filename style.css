@@ -401,7 +401,6 @@ QUALITIES
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.4px;
-  
 }
 
 .quality__para {
@@ -433,4 +432,168 @@ QUALITIES
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/*
+
+STEPS
+
+*/
+
+.steps__container {
+  position: relative;
+  padding: 96px 0;
+}
+
+.steps__row {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+}
+
+.steps__img--wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.steps__img {
+  border-radius: 4px;
+  max-width: 100%;
+  height: auto;
+}
+
+.steps__heading {
+  font-size: 16px;
+  text-align: left;
+  letter-spacing: 1.5px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.steps__title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.25;
+  text-align: left;
+  letter-spacing: 1px;
+  color: #243e63;
+}
+
+.steps__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.steps__list--item {
+  margin-top: 32px;
+  display: flex;
+}
+
+.steps__description {
+  margin-left: 24px;
+}
+
+.steps__list--num {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1;
+  color: #a0aec0;
+}
+
+.steps__list--description {
+  margin-left: 24px;
+}
+
+.steps__list--title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #243e63;
+}
+
+.steps__list--para {
+  margin-top: 0.75rem;
+  max-width: 20rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 2;
+}
+
+/*
+
+VALUES
+
+*/
+
+.values__description--container {
+  padding: 96px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.values__description {
+  width: 40%;
+}
+
+.values__img {
+  width: 100%;
+}
+
+.values__heading {
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1.6px;
+    margin-bottom: 16px;
+}
+
+.values__title {
+   font-size: 48px;
+    font-weight: 900;
+    line-height: 60px;
+    text-align: left;
+    color: #243e63;
+}
+
+.values__para {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+    color: #7c8ba1;
+    font-weight: 500;
+    margin-top: 32px;
+}
+
+
+.features__affordable--container {
+  display: flex;
+  align-items: center;
+}
+
+.features__affordable--container {
+  display: flex;
+  align-items: center;
+}
+
+.values__affordable--title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 12px;
+  color: #243e63;
+}
+
+.features__affordable--para {
+  line-height: 1.5;
+  color: #718096;
+  margin: 16px 0;
+}
+
+.features_professional--title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 12px;
+  color: #243e63;
 }
