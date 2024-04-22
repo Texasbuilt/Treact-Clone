@@ -105,9 +105,8 @@ Navagation
 }
 
 .nav__link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin: 0 24px;
+  padding: 0 0 4px;
   font-size: 14px;
   font-weight: 600;
   color: #243e63;
@@ -531,7 +530,6 @@ VALUES
   justify-content: space-between;
 }
 
-
 .values__description {
   width: 40%;
 }
@@ -541,28 +539,28 @@ VALUES
 }
 
 .values__heading {
-    text-align: left;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 1.6px;
-    margin-bottom: 16px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  margin-bottom: 16px;
 }
 
 .values__title {
-   font-size: 48px;
-    font-weight: 900;
-    line-height: 60px;
-    text-align: left;
-    color: #243e63;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 60px;
+  text-align: left;
+  color: #243e63;
 }
 
 .values__para {
-    font-size: 16px;
-    line-height: 30px;
-    text-align: left;
-    color: #7c8ba1;
-    font-weight: 500;
-    margin-top: 32px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: left;
+  color: #7c8ba1;
+  font-weight: 500;
+  margin-top: 32px;
 }
 /*---Features----*/
 
@@ -605,21 +603,21 @@ VALUES
 }
 
 .values__affordable--icon {
-   background-color: #9ae6b4;
-    border-radius: 50%;
-    padding: 6px;
-    color: #276749;
-    display: flex;
-    height: 36px;
-    width: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  background-color: #9ae6b4;
+  border-radius: 50%;
+  padding: 6px;
+  color: #276749;
+  display: flex;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .values__affordable--para,
-.values__professional--para{
+.values__professional--para {
   line-height: 1.5;
   color: #718096;
   margin: 16px 0;
@@ -640,21 +638,254 @@ VALUES
 }
 
 .values__btn {
-    font-size: 14px;
-    padding: 12px 32px;
-    color: white;
-    background-color: #6415ff;
-    font-weight: 600;
-    width: 150px;
-    transition: all 300ms ease;
-    border-radius: 50px;
-    margin: 32px 0 0;
-    padding: 12px 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-size: 14px;
+  padding: 12px 32px;
+  color: white;
+  background-color: #6415ff;
+  font-weight: 600;
+  width: 150px;
+  transition: all 300ms ease;
+  border-radius: 50px;
+  margin: 32px 0 0;
+  padding: 12px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .values__btn:hover {
-    background-color: #410cac;
+  background-color: #410cac;
+}
+
+/*
+
+PRICING
+
+*/
+
+.pricing__container {
+  padding: 96px;
+}
+
+.pricing__row {
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.pricing__heading {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  margin-bottom: 16px;
+}
+
+.pricing__title {
+  font-size: 48px;
+  font-weight: 900;
+  color: #243e63;
+  line-height: 60px;
+  letter-spacing: 1px;
+}
+
+.pricing__para {
+  width: 100%;
+  max-width: 576px;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #7c8ba1;
+}
+
+.pricing__options--container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+  
+/* Plans*/
+
+.pricing__personal--plan {
+  margin-top: 64px;
+  margin-right: 32px;
+  width: 100%;
+  max-width: 384px;
+  box-shadow: 0 0 10px 1px #000000;
+  border-radius: 8px;
+}
+
+.pricing__business--plan{
+  margin-top: 64px;
+  margin-right: 32px;
+  width: 100%;
+  max-width: 384px;
+  box-shadow: 0 0 10px 1px #00000d;
+  background-image: linear-gradient(135deg, #4c51bf 0%, #667eea 100%);
+}
+
+.pricing__enterprise--plan {
+  margin-top: 64px;
+  margin-right: 32px;
+  width: 100%;
+  max-width: 384px;
+  box-shadow: 0 0 10px 1px #00000d;
+  border-radius: 8px;
+}
+
+.plan__personal--border {
+  height: 8px;
+  background: linear-gradient(115deg, #38b2ac 0%, #81e6d9 100%);
+}
+
+.plan__business--border {
+  height: 8px;
+  background-image: linear-gradient(135deg, #4c51bf 0%, #667eea 100%);
+}
+
+.plan__enterprise--border {
+  height: 8px;
+  background: linear-gradient(115deg, #f56565 0%, #feb2b2 100%);
+}
+
+.plan__options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.plan__options--business {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0;
+  border-bottom: 2px solid #a0aec0;
+}
+
+.plan__name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #242424;
+  margin-bottom: 4px;
+}
+
+.plan__price--num {
+  font-size: 48px;
+  color: #242424;
+  font-weight: 700;
+  margin-bottom: 4px;
+  line-height: 78px;
+}
+
+.plan__price--payment {
+  color: #a0aec0;
+  letter-spacing: 1.6px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.plan__features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  border-bottom: 2px solid #a0aec0;
+}
+
+.plan__buisness--features,
+.plan__enterprise--features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  border-bottom: 2px solid #a0aec0;
+}
+
+.feature__name {
+  font-size: 20px;
+  color: #242424;
+  font-weight: 700;
+  text-align: center;
+}
+
+.features {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #718096;
+}
+
+.features__business {
+  color: #f7fafc;
+
+}
+
+.plan__btn--container {
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.plan__btn--personal {
+  background: linear-gradient(115deg, #38b2ac 0%, #81e6d9 100%);
+  padding: 16px 32px;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.8px;
+  transition: all 500ms ease;
+}
+
+.plan__btn--personal:hover {
+  transform: translate(2px, -2px);
+}
+
+.plan__btn--business {
+  background-color: #f7fafc;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #6415ff;
+  letter-spacing: 0.8px;
+  transition: all 500ms ease;
+}
+
+.plan__btn--business:hover {
+  transform: translate(2px, -2px);
+  background-color: #e2e8f0;
+}
+
+.plan__btn--enterprise {
+  background: linear-gradient(115deg, #f56565 0%, #feb2b2 100%);
+  padding: 16px 32px;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.8px;
+  transition: all 500ms ease;
+}
+
+.plan__btn--enterprise:hover {
+  transform: translate(2px, -2px);
 }
