@@ -27,13 +27,7 @@ p {
 }
 
 a {
-  padding-bottom: 4px;
-  margin: 0 24px;
   text-decoration: none;
-  color: #243e63;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
 }
 
 li {
@@ -434,6 +428,10 @@ QUALITIES
   justify-content: center;
 }
 
+.quality__btn:hover {
+  background-color: #410cac;
+}
+
 /*
 
 STEPS
@@ -620,8 +618,8 @@ VALUES
     text-align: center;
 }
 
-.values__affordable--description,v
-.values__professional--description {
+.values__affordable--para,
+.values__professional--para{
   line-height: 1.5;
   color: #718096;
   margin: 16px 0;
@@ -639,4 +637,24 @@ VALUES
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.values__btn {
+    font-size: 14px;
+    padding: 12px 32px;
+    color: white;
+    background-color: #6415ff;
+    font-weight: 600;
+    width: 150px;
+    transition: all 300ms ease;
+    border-radius: 50px;
+    margin: 32px 0 0;
+    padding: 12px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.values__btn:hover {
+    background-color: #410cac;
 }
