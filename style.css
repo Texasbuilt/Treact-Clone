@@ -889,3 +889,137 @@ PRICING
 .plan__btn--enterprise:hover {
   transform: translate(2px, -2px);
 }
+
+/*
+
+TESTIMONIALS
+
+*/
+
+.testimonials__container {
+  padding: 96x 0;
+}
+ 
+.testimonials__row {
+  display: flex;
+}
+
+.testimonials__header {
+  width: 100%;
+  padding-left: 64px;
+}
+
+.testimonials__img {
+  max-width: 100%;
+    height: auto;
+}
+
+.mySlides {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials__heading {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  flex-direction: column;
+}
+
+.testimonials__title {
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 60px;
+  color: #243e63;
+}
+
+.testimonials__para {
+  width: 100%;
+  margin: 24px 0 32px;
+  max-width: 576px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #7c8ba1;
+  opacity: 1;
+}
+
+.fa-star {
+  color: #fabf2a;
+  margin-bottom: 16px;
+}
+
+.slideshow__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #243e63;
+}
+
+.slideshow__para {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #4a5568;
+  margin: 16px 0 32px;
+}
+
+.slideshow__user {
+  display: flex;
+  align-items: center;
+}
+
+.slideshow__img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50px;
+}
+
+.slideshows__name--user {
+  font-size: 20px;
+  font-weight: 700;
+  color: #243e63;
+}
+
+.slideshow__title--user {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #7c8ba1;
+}
+
+.user__info--container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+}
+
+.slidehow__btns,
+.break {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slideshow__customer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-arrow-left,
+.fa-arrow-right {
+  background-color: #edf2f7;
+  border-radius: 50%;
+  padding: 16px;
+  margin: 0 12px;
+  color: #6415ff;
+  display: flex;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
