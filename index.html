@@ -9,6 +9,14 @@
   <script src="https://www.w3.org/2000/svg"></script>
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
   <script src="index.js"></script>
+  <style>
+    div.scroller {
+      width: 300px;
+      height: 100px;
+      overflow-y: scroll;
+      scrollbar-color: pink lightblue;
+    }
+    </style>
 </head>
 
 <body>
@@ -31,6 +39,34 @@
             <li><a href="#login" class="nav__link--login">Login</a></li>
             <li><a href="#signup" class="nav__link--btn">Sign Up</a></li>
           </ul>
+          <!----------Button Menu-->
+          <div id="myNav" class="overlay">
+            <button class="btn__menu--hover" onclick="openMenu()">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="overlay__content">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <ul class="menu__links">
+                <li class="menu__list">
+                  <a href="#" class="menu__link no__cursor" onclick="closeMenu()">About</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#" class="menu__link no__cursor" onclick="closeMenu()">Blog</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#" class="menu__link no__cursor" onclick="closeMenu()">Pricing</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#" class="menu__link no__cursor" onclick="closeMenu()">Contact Us</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#" class="menu__link no__cursor" onclick="closeMenu()">Login</a>
+                </li>
+                <li class="menu__link--btn">
+                  <a href="#" class="menu__link no__cursor" onclick="closeMenu()">Sign Up</a>
+              </ul>
+            </div>
+          </div>
         </div>
         </div>
         </div>
@@ -67,110 +103,111 @@
     <section id="features">
       <div class="features__container">
         <h5 class="features__heading">FEATURES</h5>
-        <div class="row features__row services__row">
-          <h2 class="features__title">We have Amazing <span class="purple">Service.</span></h2>
-          <p class="features__para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            sint veniam laborum libero iure autem repellat quisquam inventore
-            earum cum!
-          </p>
+        <div class="features__row services__row">
+          <div class="features__description">
+            <h2 class="features__title">We have Amazing <span class="purple">Service.</span></h2>
+            <p class="features__para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              sint veniam laborum libero iure autem repellat quisquam inventore
+              earum cum!
+            </p>
+          </div>
 
-          <div class="row services__row--container">
-            <div class="features__services--wrapper">
-              <div class="features__services">
-                <figure class="service__img--wrapper">
-                  <img class="service__img"
-                    src="https://treact.owaiskhan.me/static/media/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
-                    alt="shield-icon" />
-                </figure>
-                <div class="service__description">
-                  <h5 class="service__title">Secure</h5>
-                  <p class="service__para">
-                    We strictly only deal with vendoors that provide top notch
-                    security
-                  </p>
-                </div>
+          <div class="features__services--wrapper">
+            <div class="features__services">
+              <figure class="service__img--wrapper">
+                <img class="service__img"
+                  src="https://treact.owaiskhan.me/static/media/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
+                  alt="shield-icon" />
+              </figure>
+              <div class="service__description">
+                <h5 class="service__title">Secure</h5>
+                <p class="service__para">
+                  We strictly only deal with vendoors that provide top notch
+                  security
+                </p>
               </div>
+            </div>
 
 
-              <div class="features__services">
-                <figure class="service__img--wrapper">
-                  <img class="service__img"
-                    src="https://treact.owaiskhan.me/static/media/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg"
-                    alt="support-icon" />
-                </figure>
-                <div class="service__description">
-                  <h5 class="service__title">24/7 Support</h5>
-                  <p class="service__para">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Eligendi, optio.
-                  </p>
-                </div>
+            <div class="features__services">
+              <figure class="service__img--wrapper">
+                <img class="service__img"
+                  src="https://treact.owaiskhan.me/static/media/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg"
+                  alt="support-icon" />
+              </figure>
+              <div class="service__description">
+                <h5 class="service__title">24/7 Support</h5>
+                <p class="service__para">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Eligendi, optio.
+                </p>
               </div>
+            </div>
 
 
-              <div class="features__services">
-                <figure class="service__img--wrapper">
-                  <img class="service__img"
-                    src="https://treact.owaiskhan.me/static/media/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg"
-                    alt="customize-icon" />
-                </figure>
-                <div class="service__description">
-                  <h5 class="service__title">Customizable</h5>
-                  <p class="service__para">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Eligendi, optio.
-                  </p>
-                </div>
+            <div class="features__services">
+              <figure class="service__img--wrapper">
+                <img class="service__img"
+                  src="https://treact.owaiskhan.me/static/media/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg"
+                  alt="customize-icon" />
+              </figure>
+              <div class="service__description">
+                <h5 class="service__title">Customizable</h5>
+                <p class="service__para">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Eligendi, optio.
+                </p>
               </div>
+            </div>
 
-              <div class="features__services">
-                <figure class="service__img--wrapper">
-                  <img class="service__img"
-                    src="https://treact.owaiskhan.me/static/media/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg"
-                    alt="reliable-icon" />
-                </figure>
-                <div class="service__description">
-                  <h5 class="service__title">Reliable</h5>
-                  <p class="service__para">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Eligendi, optio.
-                  </p>
-                </div>
+            <div class="features__services">
+              <figure class="service__img--wrapper">
+                <img class="service__img"
+                  src="https://treact.owaiskhan.me/static/media/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg"
+                  alt="reliable-icon" />
+              </figure>
+              <div class="service__description">
+                <h5 class="service__title">Reliable</h5>
+                <p class="service__para">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Eligendi, optio.
+                </p>
               </div>
+            </div>
 
-              <div class="features__services">
-                <figure class="service__img--wrapper">
-                  <img class="service__img"
-                    src="https://treact.owaiskhan.me/static/media/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg"
-                    alt="fast-icon" />
-                </figure>
-                <div class="service__description">
-                  <h5 class="service__title">Fast</h5>
-                  <p class="service__para">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Eligendi, optio.
-                  </p>
-                </div>
+            <div class="features__services">
+              <figure class="service__img--wrapper">
+                <img class="service__img"
+                  src="https://treact.owaiskhan.me/static/media/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg"
+                  alt="fast-icon" />
+              </figure>
+              <div class="service__description">
+                <h5 class="service__title">Fast</h5>
+                <p class="service__para">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Eligendi, optio.
+                </p>
               </div>
+            </div>
 
-              <div class="features__services">
-                <figure class="service__img--wrapper">
-                  <img class="service__img"
-                    src="https://treact.owaiskhan.me/static/media/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg"
-                    alt="simple-icon" />
-                </figure>
-                <div class="service__description">
-                  <h5 class="service__title">Easy</h5>
-                  <p class="service__para">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Eligendi, optio.
-                  </p>
-                </div>
+            <div class="features__services">
+              <figure class="service__img--wrapper">
+                <img class="service__img"
+                  src="https://treact.owaiskhan.me/static/media/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg"
+                  alt="simple-icon" />
+              </figure>
+              <div class="service__description">
+                <h5 class="service__title">Easy</h5>
+                <p class="service__para">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Eligendi, optio.
+                </p>
               </div>
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
     <!------------------------QUALITY--------------------------->
@@ -179,7 +216,7 @@
         <div class="row quality__row">
           <img class="quality__img"
             src="https://treact.owaiskhan.me/static/media/hero-screenshot-1.40a097b525c2f8c9808e.png" alt="">
-            <div class="quality__description">
+          <div class="quality__description">
             <h5 class="quality__heading">QUALITY WORK</h5>
             <h2 class="quality__title">Designed & Developed by <span class="purple">Professionals.</span></h2>
             <p class="quality__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae recusandae ad
@@ -260,9 +297,9 @@
                 <p class="values__professional--para">We assure you are that our templates are designed and created by
                   professionals designers. </p>
               </div>
-            </div>
-            <div>
-              <a class="values__btn" href="#">Learn More</a>
+              <div class="values__btn--wrapper">
+                <a class="values__btn" href="#">Learn More</a>
+              </div>
             </div>
           </div>
           <figure class="values__img--wrapper">
