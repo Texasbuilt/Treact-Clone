@@ -6,17 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Treact</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="./main.js"></script>
   <script src="https://www.w3.org/2000/svg"></script>
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
-  <style>
-    div.scroller {
-      width: 300px;
-      height: 100px;
-      overflow-y: scroll;
-      scrollbar-color: pink lightblue;
-    }
-    </style>
 </head>
 
 <body>
@@ -39,36 +31,9 @@
             <li><a href="#login" class="nav__link--login">Login</a></li>
             <li><a href="#signup" class="nav__link--btn">Sign Up</a></li>
           </ul>
-          <!----------Button Menu-->
-          <div id="myNav" class="overlay">
-            <button class="btn__menu--hover" onclick="openMenu()">
-              <i class="fas fa-bars"></i>
-            </button>
-            <div class="overlay__content">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <ul class="menu__links">
-                <li class="menu__list">
-                  <a href="#" class="menu__link no__cursor" onclick="closeMenu()">About</a>
-                </li>
-                <li class="menu__list">
-                  <a href="#" class="menu__link no__cursor" onclick="closeMenu()">Blog</a>
-                </li>
-                <li class="menu__list">
-                  <a href="#" class="menu__link no__cursor" onclick="closeMenu()">Pricing</a>
-                </li>
-                <li class="menu__list">
-                  <a href="#" class="menu__link no__cursor" onclick="closeMenu()">Contact Us</a>
-                </li>
-                <li class="menu__list">
-                  <a href="#" class="menu__link no__cursor" onclick="closeMenu()">Login</a>
-                </li>
-                <li class="menu__link--btn">
-                  <a href="#" class="menu__link no__cursor" onclick="closeMenu()">Sign Up</a>
-              </ul>
-            </div>
-          </div>
-        </div>
-        </div>
+          <button class="hamburger">
+            <div class="bar"></div>
+          </button>
         </div>
       </nav>
     </section>
