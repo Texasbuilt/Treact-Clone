@@ -346,6 +346,7 @@ FEATURES
 }
 
 .features__heading {
+  text-align: center;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.4px;
@@ -378,16 +379,15 @@ FEATURES
   justify-content: space-between;
 }
 
+
 .features__services {
-  display: flex;
-  margin: 0 16px;
   padding: 32px 8px;
-  width: calc(100% / 3);
+  margin: 0 16px;
+  height: 100%;
+  width: 30%;
+  width: calc(100%/3);
   display: flex;
   align-items: center;
-  height: 100%;
-  padding: 32px 8px;
-  width: 30%;
 }
 
 .service__title {
@@ -431,7 +431,7 @@ QUALITIES
   position: relative;
 }
 
-.quality__header {
+.quality__heading {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -443,9 +443,10 @@ QUALITIES
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  max-width: 1280px;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
+  max-width: 1280px;
   padding: 96px 0;
 }
 
@@ -526,7 +527,7 @@ STEPS
 }
 
 .steps__img {
-  width: 100px;
+  width: 100%;
 }
 
 .steps__heading {
@@ -1645,4 +1646,6 @@ background: #6415ff;
 max-width: 100%;
 margin-left: auto;
 margin-right: auto;
+}
+
 }
