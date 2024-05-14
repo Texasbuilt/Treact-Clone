@@ -16,24 +16,55 @@
     <!------------------------Navigation--------------------->
     <section id="landing">
       <nav>
-        <div class="row nav__container">
-          <div class="logo__wrapper">
-            <a class="nav__logo--container" href="#">
-              <img class="logo__img" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="logo" />
-              <h2 class="logo__name">Treact</h2>
-            </a>
+        <div class="nav__container">
+          <div class="row nav__container">
+            <div class="logo__wrapper">
+              <a class="nav__logo--container" href="#">
+                <img class="logo__img" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="logo" />
+                <h2 class="logo__name">Treact</h2>
+              </a>
+            </div>
+
+            <ul class="nav__links">
+              <li><a href="#about" class="nav__link">About</a></li>
+              <li><a href="#blog" class="nav__link">Blog</a></li>
+              <li><a href="#pricing" class="nav__link">Pricing</a></li>
+              <li><a href="#contact" class="nav__link">Contact Us</a></li>
+              <li><a href="#login" class="nav__link--login">Login</a></li>
+              <li><a href="#signup" class="nav__link--btn">Sign Up</a></li>
+            </ul>
+
+            <button class="nav__backdrop" onclick="openMenu()">
+              <svg class="backdrop__lines" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="light___StyledMenuIcon-sc-lj69nl-15 bPlZcF">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </button>
+
+            <div class="menu__backdrop">
+              <button class="nav__backdrop btn__menu--close" onclick="closeMenu()">
+                <svg class="close__btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="light___StyledCloseIcon-sc-lj69nl-14 brSrPp">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
+
+              <div class="nav__links--container">
+                <a class="backdrop__link" href="">About</a>
+                <a class="backdrop__link" href="">Blog</a>
+                <a class="backdrop__link" href="">Pricing</a>
+                <a class="backdrop__link" href="">Contact Us</a>
+                <a class="backdrop__link" href="">Login</a>
+                <a class="backdrop__link backdrop__btn" href="">Sign Up</a>
+              </div>
+
+            </div>
           </div>
-          <ul class="nav__links">
-            <li><a href="#about" class="nav__link">About</a></li>
-            <li><a href="#blog" class="nav__link">Blog</a></li>
-            <li><a href="#pricing" class="nav__link">Pricing</a></li>
-            <li><a href="#contact" class="nav__link">Contact Us</a></li>
-            <li><a href="#login" class="nav__link--login">Login</a></li>
-            <li><a href="#signup" class="nav__link--btn">Sign Up</a></li>
-          </ul>
-          <button class="hamburger">
-            <div class="bar"></div>
-          </button>
         </div>
       </nav>
     </section>

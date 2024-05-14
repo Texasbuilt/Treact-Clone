@@ -1,5 +1,7 @@
-window.onload = function() {
-    window.addEventListener('scroll'), function () {
-        if (window.)
-    }
+function openMenu() {
+    document.body.classList += " menu--open"
+}
+
+function closeMenu() {
+    document.body.classList.remove('menu--open')
 }

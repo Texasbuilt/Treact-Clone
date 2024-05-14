@@ -7,10 +7,11 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-  scrollbar-color: #6415ff;
+.nav__backdrop,
+.backdrop__link {
+  display: none;
 }
+
 
 main {
   padding: 32px;
@@ -80,11 +81,11 @@ Navagation
 }
 
 .nav__container {
-  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav__logo--container {
@@ -97,7 +98,6 @@ Navagation
   height: 40px;
   margin-right: 12px;
 }
-
 .logo__wrapper {
   display: flex;
   align-items: center;
@@ -127,8 +127,9 @@ Navagation
 }
 
 .nav__links {
+  width: 100%;
   display: flex;
-  align-items: center;
+  justify-content: end;
 }
 
 .nav__link--login {
@@ -261,15 +262,6 @@ HEADER
   margin-top: 16px;
   padding-right: 64px;
 }
-
-/* Menu */
-
-.overlay__content {
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
 
 /*
 
@@ -1293,43 +1285,139 @@ FOOTER
 
 @media (max-width: 728px) {
 
-
-.hamburger {
-  position: relative;
-  display: block;
-  width: 35px;
-  cursor: pointer;
-  appearance: none;
-  background: none;
-  outline: none;
-  border: none;
-}
-
-.hamburger .bar, .hamburger::after, .hamburger::before {
-content: '';
-display: block;
-width: 100%;
-height: 5px;
-background-color: #6415ff;
-margin: 6px 0px;
-transition: 0.4s;
-}
-
-.hamburger.is-active, .hamburger::before {
-  transform: rotate(-45deg) translate(-8px ,6px);
-}
-
-.hamburger.is-active, .bar {
-  opacity: 0;
-}
-
-.hamburger.is-active, .hamburger::after {
-  transform: rotate(45deg) translate(-8px ,-8px);
-}
-
-   .overlay {
+  .nav__backdrop,
+  .nav__backdrop::after {
     display: inline;
-   }
+    border: none;
+    background-color: transparent;
+    text-align: center;
+  }
+
+  .backdrop__lines:hover {
+    color: rgb(36, 62, 99);
+    height: 1.5rem;
+    width: 1.5rem;
+    transition: all 300ms ease;
+  }
+
+  .backdrop__lines:hover {
+    color: #6415ff;
+    cursor: pointer;
+  }
+
+  .menu__backdrop {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 1;
+    right: 0;
+    z-index: 99;
+    transform: translateY(1%);
+    display: none;
+    justify-content: center;
+    transition: left 300ms ease-in;
+  }
+
+  .menu--open .menu__backdrop {
+    display: flex;
+  }
+
+  .menu--open {
+    transform: translateX(50%), translateZ(50px);
+  }
+
+  .nav__links--container {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 50px;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    transition: left 300ms ease;
+    }
+
+  .btn__menu--close {
+    position: absolute;
+    right: 26px;
+  }
+
+  .close__btn {
+    height: 1.5rem;
+    width: 1.5rem;
+    color: rgb(36, 62, 99);
+    transition: all 300ms ease;
+  }
+
+  .close__btn:hover {
+    color: #6415ff;
+    cursor: pointer;
+  }
+
+  .backdrop__link {
+    display: flex;
+    display: inline;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1A202C;
+    margin: 8px 0;
+    padding: 0 0 4px;
+    opacity: 95%;
+    position: relative;
+    left: -5;
+    transition: all 300ms ease;
+}
+
+.backdrop__link:hover {
+    color: rgb(100 21 255);
+}
+
+.backdrop__link::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: rgb(100 21 255);
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.backdrop__link:hover::after {
+    opacity: 1;
+}
+
+.backdrop__btn {
+    color: #F7FAFC;
+    background-color: #6415ff;
+    border-radius: 50px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 300ms ease;
+}
+
+.backdrop__btn:hover {
+    color: #F7FAFC;
+    background-color: rgb(80 17 204);
+}
+
+.backdrop__btn:hover::after {
+    opacity: 0;
+}
+
+
+
+  /* Navagation */
 
   .nav__links {
     display: none;
@@ -1518,14 +1606,7 @@ transition: 0.4s;
     text-align: center;
     line-height: 1.6;
   }
-
-  .values__features--container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  
 
   .values__features--affordable,
   .values__features--professional {
@@ -1666,5 +1747,3 @@ transition: 0.4s;
     margin-right: auto;
   }
 }
-
-
