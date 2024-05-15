@@ -1568,6 +1568,11 @@ FOOTER
 
   /* VALUES */
 
+.values__features--container{
+  display: flex;
+  flex-direction: column;
+}
+
   .values__row {
     display: flex;
     flex-direction: column-reverse;
@@ -1613,12 +1618,14 @@ FOOTER
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .values__affordable--header,
   .values__professional--header {
     display: flex;
     align-items: center;
+    margin-right: 10%;
   }
 
   .values__affordable--para,
