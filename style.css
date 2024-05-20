@@ -49,6 +49,7 @@ li {
 .purple,
 h5 {
   color: #6415ff;
+  font-weight: 700;
 }
 
 .white {
@@ -130,6 +131,7 @@ Navagation
   width: 100%;
   display: flex;
   justify-content: end;
+  min-width:fit-content
 }
 
 .nav__link--login {
@@ -169,29 +171,23 @@ HEADER
   margin-left: auto;
   margin-right: auto;
   padding: 96px 0;
-  display: flex;
   position: relative;
 }
 
 .header__row {
   display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+ justify-content: center;
 }
 
 .header__description {
-  max-width: 100%;
 }
 
 .header__title {
-  font-size: 36px;
+  text-align: left;
+  font-weight:700;
 }
 
 .header__img {
-  width: 100%;
-  min-width: 0px;
 }
 
 .header__para {
@@ -365,6 +361,10 @@ FEATURES
   padding: 20px;
 }
 
+.service__img {
+  max-width: none;
+}
+
 .service__para {
   color: #7c8ba1;
   margin-top: 16px;
@@ -382,6 +382,7 @@ QUALITIES
 
 .quality__container {
   position: relative;
+  padding: 96px 0;
 }
 
 .quality__heading {
@@ -521,7 +522,7 @@ STEPS
   color: #a0aec0;
 }
 
-.steps__list--description {
+.steps__list--desciption {
   margin-left: 24px;
 }
 
@@ -546,17 +547,17 @@ VALUES
 */
 
 .values__description--container {
-  padding: 80px 0;
+  padding: 96px 0;
   display: flex;
   justify-content: space-between;
 }
 
 .values__description {
-  width: 40%;
+max-width:50%
 }
 
 .values__img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .values__heading {
@@ -576,7 +577,7 @@ VALUES
 }
 
 .values__para {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 30px;
   text-align: left;
   color: #7c8ba1;
@@ -740,7 +741,6 @@ PRICING
   margin-right: 32px;
   width: 100%;
   max-width: 384px;
-  box-shadow: 0 0 10px 1px #000000;
   border-radius: 8px;
 }
 
@@ -749,7 +749,7 @@ PRICING
   margin-right: 32px;
   width: 100%;
   max-width: 384px;
-  box-shadow: 0 0 10px 1px #00000d;
+  border-radius: 8px;
   background-image: linear-gradient(135deg, #4c51bf 0%, #667eea 100%);
 }
 
@@ -758,7 +758,6 @@ PRICING
   margin-right: 32px;
   width: 100%;
   max-width: 384px;
-  box-shadow: 0 0 10px 1px #00000d;
   border-radius: 8px;
 }
 
@@ -802,7 +801,7 @@ PRICING
   margin-bottom: 4px;
 }
 
-.plan__price--num {
+.plan__price--numb {
   font-size: 48px;
   color: #242424;
   font-weight: 700;

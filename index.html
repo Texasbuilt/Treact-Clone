@@ -8,12 +8,13 @@
   <link rel="stylesheet" href="style.css" />
   <script src="./main.js"></script>
   <script src="https://www.w3.org/2000/svg"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <main>
-    <!------------------------Navigation--------------------->
+     <!------------------------Navigation--------------------->
     <section id="landing">
       <nav>
         <div class="nav__container">
@@ -24,7 +25,6 @@
                 <h2 class="logo__name">Treact</h2>
               </a>
             </div>
-
             <ul class="nav__links">
               <li><a href="#about" class="nav__link">About</a></li>
               <li><a href="#blog" class="nav__link">Blog</a></li>
@@ -33,7 +33,6 @@
               <li><a href="#login" class="nav__link--login">Login</a></li>
               <li><a href="#signup" class="nav__link--btn">Sign Up</a></li>
             </ul>
-
             <button class="nav__backdrop" onclick="openMenu()">
               <svg class="backdrop__lines" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -43,7 +42,6 @@
                 <line x1="3" y1="18" x2="21" y2="18"></line>
               </svg>
             </button>
-
             <div class="menu__backdrop">
               <button class="nav__backdrop btn__menu--close" onclick="closeMenu()">
                 <svg class="close__btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -53,7 +51,6 @@
                   <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg>
               </button>
-
               <div class="nav__links--container">
                 <a class="backdrop__link" href="">About</a>
                 <a class="backdrop__link" href="">Blog</a>
@@ -62,7 +59,6 @@
                 <a class="backdrop__link" href="">Login</a>
                 <a class="backdrop__link backdrop__btn" href="">Sign Up</a>
               </div>
-
             </div>
           </div>
         </div>
@@ -71,9 +67,9 @@
     <!------------------------HEADER--------------------------->
     <header>
       <div class="header__container">
-        <div class="header__row">
+        <div class="row header__row">
           <div class="header__description">
-            <h1 class="header__title">
+            <h1 class="header__title text-left">
               Beautiful React Templates <span class="purple">for you.</span>
             </h1>
             <p class="header__para">
@@ -112,7 +108,7 @@
           <div class="features__services--wrapper">
             <div class="features__services">
               <figure class="service__img--wrapper">
-                <img class="service__img"
+                <img class="service__img max-w-full"
                   src="https://treact.owaiskhan.me/static/media/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
                   alt="shield-icon" />
               </figure>
@@ -268,7 +264,7 @@
         <div class="row values__row">
           <div class="values__description">
             <h5 class="values__heading">VALUES</h5>
-            <H2 class="values__title">We Always Abide by our <span class="purple">Principles.</span></H2>
+            <H2 class="values__title">We Always Abide by Our <span class="purple">Principles.</span></H2>
             <p class="values__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
               laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -293,9 +289,9 @@
                 <p class="values__professional--para">We assure you are that our templates are designed and created by
                   professionals designers. </p>
               </div>
-              <div class="values__btn--wrapper">
-                <a class="values__btn" href="#">Learn More</a>
-              </div>
+            </div>
+            <div class="values__btn--wrapper">
+              <a class="values__btn" href="#">Learn More</a>
             </div>
           </div>
           <figure class="values__img--wrapper">
@@ -318,9 +314,9 @@
           </div>
           <div class="pricing__options--container">
             <!----PERSONAL---->
-            <div class="pricing__personal--plan">
+            <div class="pricing__personal--plan shadow">
               <div class="pricing__personal--wrapper">
-                <div class="plan__personal--border"></div>
+                <div class="plan__personal--border rounded-lg"></div>
                 <div class="plan__options">
                   <h4 class="plan__name">PERSONAL</h4>
                   <h2 class="plan__price--numb">$17.99</h2>
@@ -339,9 +335,9 @@
               </div>
             </div>
             <!----BUSINESS---->
-            <div class="pricing__business--plan">
+            <div class="pricing__business--plan shadow-none">
               <div class="pricing__business--wrapper">
-                <div class="plan__business--border"></div>
+                <div class="plan__business--border rounded-lg"></div>
                 <div class="plan__options">
                   <h4 class="plan__name"> <span class="white">BUSINESS</h4>
                   <h2 class="plan__price--numb"><span class="white">$37.99</h2>
@@ -360,9 +356,9 @@
               </div>
             </div>
             <!----ENTERPRISE---->
-            <div class="pricing__enterprise--plan">
+            <div class="pricing__enterprise--plan shadow">
               <div class="pricing__enterprise--wrapper">
-                <div class="plan__enterprise--border"></div>
+                <div class="plan__enterprise--border rounded-lg"></div>
                 <div class="plan__options">
                   <h4 class="plan__name">ENTERPISE</h4>
                   <h2 class="plan__price--numb">$57.99</h2>
