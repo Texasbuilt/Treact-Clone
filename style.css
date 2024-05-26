@@ -1838,9 +1838,9 @@ FOOTER
 
   .footer__container {
     background: #6415ff;
-    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding:0px;
   }
 
 
@@ -1873,6 +1873,10 @@ margin-right: 0px;
 margin-top: 16px;
 }
 
+.footer__row {
+  padding : 16px;
+}
+
 .footer__description {
   display: flex;
   flex-wrap: wrap;
@@ -1882,6 +1886,19 @@ margin-top: 16px;
 .footer__links {
   margin-left:auto;
   margin-right: auto;
+}
+
+.footer__end {
+  display:flex;
+  font-size:16px;
+}
+
+.footer__copyright {
+  padding: 16px;
+}
+
+.banner__box {
+  padding: 16px;
 }
 
 @media (max-width: 10rem) {
